@@ -40,12 +40,23 @@ const team = [
 
 ]
 
+// MILESTONE 2: Stampare le stesse informazioni su DOM sottoforma di stringhe
+    //2.1 collego l'elemento HTML ad una costante
+    const teamlist = document.getElementById('teamList')
+
+
 // MILESTONE 1: Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
 //1 creo un ciclo for per ciclare gli oggetti dell'array 
 for (i=0; i< team.length; i++){
     //1.1 in una variabile assegno il valore dell'oggetto dell'array (teamMember)
     let teamMember = team[i];
     //1.2 mostro sulla console i teamMember
-    console.log(teamMember);
-    
+    console.log(teamMember); 
+    //2.2 all'interno del ciclo dell'array creo l'elemento li e lo assegno ad una variabile (memberNumber)
+    let memberNumber = document.createElement('li');
+    //2.3 inserisco all'interno dell' li 'Member' + il numero di iterazione attuale
+    memberNumber.innerHTML = `Member ${i + 1}`;
+    //2.4 inserisco gli li nella ul
+    teamlist.appendChild(memberNumber)
 }
+
