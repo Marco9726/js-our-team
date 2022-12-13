@@ -22,6 +22,3 @@ MILESTONE 2
         //2.5.2 creo una lista da visualizzare in HTML delle proprietà
         //2.5.3 in una variabile creo gli li da inserire nella listac
         //2.5.4 inserisco il valore delle proprietà negli li
-
-        ******* BONUS ********
-
