@@ -59,7 +59,7 @@ for (let i = 0; i<team.length; i++){
     //inserisco il div descritionsContainer all'interno delle colonne
     col[i].appendChild(descrtionsContainer);
     //creo un ciclo for in per ciclare le proprietà degli oggetti ( teamMember)
-    for (let key in teamMember){
+    
             //in una costante assegno il valore della proprietà image del teamMember
             const img = teamMember['image'];
             console.log(img);
@@ -72,10 +72,23 @@ for (let i = 0; i<team.length; i++){
             // inserisco il valore della proprietà img nel src dell'immagine
             picture.src =`./img/${img}`
 
+            // creo l'h4 che conterrà il nome del teamMember
+             let h4 = document.createElement('h4');
+            // inserisco il valore del name nell'h4 
+            h4.innerText = `${name}`
+            //inserisco l'h4 nel div
+            descrtionsContainer.appendChild(h4)
+            // creo lo span che conterrà il ruolo del teamMember
+             let span = document.createElement('span');
+            // inserisco il valore del ruolo nello span 
+            span.innerText = `${role}`
+            //inserisco lo span nel div
+            descrtionsContainer.appendChild(span)
+
 
             
          
         
-        }
+        
 }
 
