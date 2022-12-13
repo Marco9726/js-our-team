@@ -17,3 +17,8 @@ MILESTONE 2
     //2.2 all'interno del ciclo dell'array creo l'elemento li e lo assegno ad una variabile (memberNumber)
     //2.3 inserisco all'interno dell' li 'Member' + il numero di iterazione attuale
     //2.4 inserisco gli li nella ul
+    //2.5 creo un ciclo for in all'interno del ciclo for per ciclare le proprietà dei vari oggetti ( teamMember)
+        //2.5.1 in una variabile assegno il valore della proprietà(key) del teamMember
+        //2.5.2 creo una lista da visualizzare in HTML delle proprietà
+        //2.5.3 in una variabile creo gli li da inserire nella listac
+        //2.5.4 inserisco il valore delle proprietà negli li

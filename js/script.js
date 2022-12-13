@@ -58,5 +58,17 @@ for (i=0; i< team.length; i++){
     memberNumber.innerHTML = `Member ${i + 1}`;
     //2.4 inserisco gli li nella ul
     teamlist.appendChild(memberNumber)
+    //2.5 creo un ciclo for in all'interno del ciclo for per ciclare le proprietà dei vari oggetti ( teamMember)
+    for (let key in teamMember){
+        //2.5.1 in una variabile assegno il valore della proprietà(key) del teamMember
+        let property = teamMember[key];
+        //2.5.2 creo una lista da visualizzare in HTML delle proprietà
+        let propertyList = memberNumber.appendChild(document.createElement('ul'));
+        //2.5.3 in una variabile creo gli li da inserire nella lista
+        let propertyLi = propertyList.appendChild(document.createElement('li'));
+        //2.5.4 inserisco il valore delle proprietà negli li
+        propertyLi.innerHTML = `${property}`        
+
+    }
 }
 
