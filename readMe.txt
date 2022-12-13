@@ -4,5 +4,10 @@ MILESTONE 1: Stampare su console, per ogni membro del team, le informazioni di n
 MILESTONE 2: Stampare le stesse informazioni su DOM sottoforma di stringhe
 Una volta che avete terminato una milestone, fare un push e nel messaggio indicare che avete terminato la milesione numero X.
 
-//1 creo array con i membri del team
-    //1.1 creo 6 oggetti dei membri del team all'interno dell'array
+MILESTONE 0 X
+//0 creo array con i membri del team
+    //0.1 creo 6 oggetti dei membri del team all'interno dell'array
+MILESTONE 1 X
+//1 creo un ciclo for per ciclare gli oggetti dell'array 
+    //1.1 in una variabile assegno il valore dell'oggetto dell'array (teamMember)
+    //1.2 mostro sulla console i teamMember

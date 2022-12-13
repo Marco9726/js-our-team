@@ -1,36 +1,37 @@
-//1 creo array con i membri del team
+//MILESTONE 0
+//0 creo array con i membri del team
 const team = [
-    //1.1 creo 6 oggetti dei membri del team all'interno dell'array
+    //0.1 creo 6 oggetti dei membri del team all'interno dell'array
     {
         name: "Wayne Barnett",
         role: "Founder & CEO",
         image: "wayne-barnett-founder-ceo.jpg"
     },
-    //1.1
+    //0.1
     {
         name: "Angela Caroll",
         role: "Chief Editor",
         image: "angela-caroll-chief-editor.jpg"
     },
-    //1.1
+    //0.1
     {
         name: "Walter Gordon",
         role: "Office Manager",
         image: "walter-gordon-office-manager.jpg"
     },
-    //1.1
+    //0.1
     {
         name: "Angela Lopez",
         role: "Social Media Manager",
         image: "angela-lopez-social-media-manager.jpg"
     },
-    //1.1
+    //0.1
     {
         name: "Scott Estrada",
         role: "Developer",
         image: "scott-estrada-developer.jpg"
     },
-    //1.1
+    //0.1
     {
         name: "Barbara Ramos",
         role: "Graphic Designer",
@@ -38,3 +39,13 @@ const team = [
     }
 
 ]
+
+// MILESTONE 1: Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
+//1 creo un ciclo for per ciclare gli oggetti dell'array 
+for (i=0; i< team.length; i++){
+    //1.1 in una variabile assegno il valore dell'oggetto dell'array (teamMember)
+    let teamMember = team[i];
+    //1.2 mostro sulla console i teamMember
+    console.log(teamMember);
+    
+}
