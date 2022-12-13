@@ -53,42 +53,40 @@ for (let i = 0; i<team.length; i++){
     //inserisco il div imgContainer all'interno delle colonne
     col[i].appendChild(imgContainer);
     //creo il div che conterrà le descrizioni
-    let descrtionsContainer = document.createElement('div');
+    let descritionsContainer = document.createElement('div');
     //assegno l'id al div appena creato
-    descrtionsContainer.setAttribute('id', 'descritionsContainer');
+    descritionsContainer.setAttribute('id', 'descritionsContainer');
     //inserisco il div descritionsContainer all'interno delle colonne
-    col[i].appendChild(descrtionsContainer);
+    col[i].appendChild(descritionsContainer);
     //creo un ciclo for in per ciclare le proprietà degli oggetti ( teamMember)
-    
-            //in una costante assegno il valore della proprietà image del teamMember
-            const img = teamMember['image'];
-            console.log(img);
-            //in una costante assegno il valore della proprietà name del teamMember
-            const name = teamMember['name'];
-            //in una costante assegno il valore della proprietà role del teamMember
-            const role = teamMember['role'];
-            //creo l'elemento html dell'immagine
-            const picture = document.createElement('img');
-            // inserisco il valore della proprietà img nel src dell'immagine
-            picture.src =`./img/${img}`
 
-            // creo l'h4 che conterrà il nome del teamMember
-             let h4 = document.createElement('h4');
-            // inserisco il valore del name nell'h4 
-            h4.innerText = `${name}`
-            //inserisco l'h4 nel div
-            descrtionsContainer.appendChild(h4)
-            // creo lo span che conterrà il ruolo del teamMember
-             let span = document.createElement('span');
-            // inserisco il valore del ruolo nello span 
-            span.innerText = `${role}`
-            //inserisco lo span nel div
-            descrtionsContainer.appendChild(span)
+    //in una costante assegno il valore della proprietà image del teamMember
+    const img = teamMember['image'];
+    console.log(img);
+    //in una costante assegno il valore della proprietà name del teamMember
+    const name = teamMember['name'];
+    //in una costante assegno il valore della proprietà role del teamMember
+    const role = teamMember['role'];
+    //creo l'elemento html dell'immagine
+    const picture = document.createElement('img');
+    // inserisco il valore della proprietà img nel src dell'immagine
+    picture.src =`./img/${img}`;
+    console.log(picture);
+    //inserisco l'immagine nel container nell'HTML
+    imgContainer.appendChild(picture);
 
-
-            
-         
-        
+    // creo l'h4 che conterrà il name del teamMember
+     let h4 = document.createElement('h4');
+    // inserisco il valore del name nell'h4 
+    h4.innerText = `${name}`;
+    //inserisco l'h4 nel div
+    descritionsContainer.appendChild(h4);
+    // creo lo span che conterrà il role del teamMember
+     let span = document.createElement('span');
+    // inserisco il valore del role nello span 
+    span.innerText = `${role}`
+    //inserisco lo span nel div
+    descritionsContainer.appendChild(span)  
         
 }
 

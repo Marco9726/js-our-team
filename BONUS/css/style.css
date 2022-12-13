@@ -17,15 +17,6 @@ p{
     line-height: 2rem;
 }
 
-#container{
-    border: 1px solid black;
-}
-
-.col-4{
-
-    border: 1px solid black
-}
-
 .col-4 h4{
     font-family: 'Playfair Display', serif;
 }
@@ -37,4 +28,8 @@ span{
 #descritionsContainer{
     background-color: white;
     padding: 1rem 0;
+}
+
+img{
+    width: 100%;
 }
