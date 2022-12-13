@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 
 main{
@@ -9,7 +10,7 @@ main{
 }
 
 *{
-    color: rgb(79, 79, 79);
+    color: rgb(114, 114, 114);
 }
 
 p{
@@ -17,11 +18,23 @@ p{
 }
 
 #container{
-    height: 50vh;
     border: 1px solid black;
 }
 
 .col-4{
-    background-color: aqua;
+
     border: 1px solid black
+}
+
+.col-4 h4{
+    font-family: 'Playfair Display', serif;
+}
+
+span{
+    font-weight: 300;
+}
+
+#descritionsContainer{
+    background-color: white;
+    padding: 1rem 0;
 }
