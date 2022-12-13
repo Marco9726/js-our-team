@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    background-color: rgb(245,245,240);
+}
+
+*{
+    color: rgb(79, 79, 79);
+}
+
+p{
+    line-height: 2rem;
+}
+
+#container{
+    height: 50vh;
+    border: 1px solid black;
+}
+
+.col-4{
+    height: 50px;
+    background-color: aqua;
+    border: 1px solid black
+}
